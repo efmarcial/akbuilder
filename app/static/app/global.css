@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap');
+
+
 .navbar-logo-centered .navbar-nav .nav-link{
     padding: .5em 1em;
 }
 
 /* Setup logo size for desktop */
 .logo { 
-    width: 100px;
+    width: 125px;
     height: inherit;
 }
 
@@ -18,4 +21,18 @@
     background-position: center;
     background-size: cover;
 
+}
+
+.main-bg {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.header-text {
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 720px) and (min-width: 200px){
+    .header-text {
+        font-size: 4rem;
+    }
 }

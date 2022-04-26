@@ -28,47 +28,54 @@
 <body>
     
     <!--Main Section-->
-    <section id="main-section" class="hero is-fullheight main-background">
-        <div class="hero-head">
+    <section id="main-section" class="hero is-fullheight main-background ">
+        <div class="hero-head main-bg">
             <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active mx-4 mt-4">
-              <a class="nav-link " href="#about">About Us<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item mx-4 mt-4">
-              <a class="nav-link " href="#portfolio">Portfolio</a>
-            </li>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item  mx-4 mt-4">
+                    <a class="nav-link has-text-white" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item mx-4 mt-4">
+                    <a class="nav-link has-text-white" href="#portfolio">Portfolio</a>
+                    </li>
 
-            <li class="nav-item mx-4">
-                <a class="d-none d-lg-block" href="{% url 'index' %}">
-                    <img class="logo" src="{% static 'app/images/ak_logo.png' %}">
-                </a>
-            </li>
-            <li class="nav-item mx-4 mt-4">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item mx-4 mt-4">
-              <a class="nav-link disabled" href="#testimonals">Testimonals</a>
-            </li>
-          </ul>
+                    <li class="nav-item mx-4">
+                        <a class="d-none d-lg-block" href="{% url 'index' %}">
+                            <img class="logo" src="{% static 'app/images/ak_logo.png' %}">
+                        </a>
+                    </li>
+                    <li class="nav-item mx-4 mt-4">
+                    <a class="nav-link has-text-white" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mx-4 mt-4">
+                    <a class="nav-link has-text-white" href="#testimonals">Testimonals</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
         </div>
-      </nav>
-        </div>
-        <div class="hero-body">
+
+        <!-- Main body -->
+        <div class="hero-body main-bg">
             <div class="container">
 
                 <div class="columns has-text-centered">
                     <div class="column">
 
-                        <h1 class="title is-size-1-desktop is-size-1-tablet is-size-2-mobile">
-                            Landing Page Main Section
+                        <h1 class="header-text has-text-white"
+                            style="font-family: 'Teko', san-serif;">
+                            Designed for Life
                         </h1>
+
+                        <p class="subtitle has-text-white is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+                            DECKS, SCREENED PORCHES, AND FLOORING FOR EVERY HOME
+                        </p>
 
                         <!--Book a consultation button-->
                         <button class="button">Book a consultation</button>
