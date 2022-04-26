@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import django_on_heroku, os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,12 +26,13 @@ SECRET_KEY = 'django-insecure-0y6&bfzrgs-u=r0dm2*-#bg*^!5zjfxzc*xuw!(*mqn##$o&2_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'akhomerenovations.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1:8000','127.0.0.1', 'akhomerenovations.herokuapp.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -73,11 +75,37 @@ WSGI_APPLICATION = 'akbuilder.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
+'''
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
+
+'''
+
+
+
+DATABASES = {
+
+    'default': {
+
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'd413gufkpf6fsh',
+
+        'USER': 'zkovrvscyfzbnf',
+
+        'PASSWORD': '5ca71eaa89f8979e6edf78e6a4e021ffdc4170d373588da32529928bd3586a00',
+
+        'HOST': 'ec2-44-199-143-43.compute-1.amazonaws.com',
+
+
+    }
+
 }
 
 
@@ -121,3 +149,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+django_on_heroku.settings(locals())
