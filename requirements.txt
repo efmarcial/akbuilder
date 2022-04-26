@@ -2,3 +2,5 @@ django
 gunicorn
 django_on_heroku
 whitenoise
+beautifulsoup4
+selenium
