@@ -8,9 +8,9 @@
     height: inherit;
 }
 
-main-background {
+.main-background {
     /* Get the image for the main page */
-    background-image: url('images/main_background.jpeg');
+    /*background-image: url('images/main_background.jpeg');*/
     height: 100%;
 
     /* Set up the image */

@@ -28,7 +28,7 @@
 <body>
     
     <!--Main Section-->
-    <section class="hero is-fullheight main-background">
+    <section id="main-section" class="hero is-fullheight main-background">
         <div class="hero-head">
             <!--Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -143,6 +143,23 @@
             </div>
         </div>
     </section>
+
+    <!--Script to load new background on refesh-->
+    <script type="text/javascript">
+        window.onload = function() {
+            /* Get images */
+            var images = ["{% static 'app/images/main_background.jpeg' %}","{% static 'app/images/main_background_2.jpeg' %}",
+                            "{% static 'app/images/main_background_3.jpeg' %}", "{% static 'app/images/main_background_4.jpeg' %}"
+                            ];
+
+            /* Get random image */
+            var image = images[Math.floor(Math.random() * images.length)];
+
+            /* Set the random background image */
+            document.getElementById('main-section').style.backgroundImage = "url('" + image + "')";
+
+        };
+    </script>
 
     <!-- Script of boostrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
