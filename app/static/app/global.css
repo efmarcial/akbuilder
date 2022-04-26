@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Teko:wght@400;500&display=swap');
 
 
 .navbar-logo-centered .navbar-nav .nav-link{
@@ -16,6 +16,9 @@
     /*background-image: url('images/main_background.jpeg');*/
     height: 100%;
 
+    /* Create parallax effect */
+    background-attachment: fixed;
+
     /* Set up the image */
     background-repeat: no-repeat;
     background-position: center;
@@ -29,6 +32,7 @@
 
 .header-text {
     font-size: 5rem;
+    margin-top: -5%;
 }
 
 @media screen and (max-width: 720px) and (min-width: 200px){

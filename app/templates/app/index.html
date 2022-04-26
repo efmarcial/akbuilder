@@ -32,7 +32,9 @@
         <div class="hero-head main-bg">
             <!--Navigation Bar-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                
+                <a class="navbar-brand d-lg-none" href="{% url 'index' %}">
+                    <img class="logo" src="{% static 'app/images/ak_logo.png' %}">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -73,12 +75,24 @@
                             Designed for Life
                         </h1>
 
-                        <p class="subtitle has-text-white is-size-4-desktop is-size-4-tablet is-size-5-mobile">
+                        
+                    </div>
+                </div>
+
+                <div class="columns has-text-centered">
+                    <div class="column">
+                        <p class="subtitle has-text-white is-size-4-desktop is-size-4-tablet is-size-5-mobile"
+                                style="font-family: 'Montserrat', sans-serif;">
                             DECKS, SCREENED PORCHES, AND FLOORING FOR EVERY HOME
                         </p>
+                    </div>
+                </div>
 
+                <div class="columns has-text-centered">
+                    <div class="column">
                         <!--Book a consultation button-->
-                        <button class="button">Book a consultation</button>
+                        <button class="button is-primary is-medium is-responsive"
+                            style="font-family: 'Montserrat', sans-serif;">Book a consultation</button>
                     </div>
                 </div>
 
