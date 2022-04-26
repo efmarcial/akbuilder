@@ -7,3 +7,4 @@ from .models import *
 admin.site.register(GalleryImage)
 admin.site.register(Video)
 admin.site.register(Testimonial)
+admin.site.register(Service)

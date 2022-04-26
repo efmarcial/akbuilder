@@ -28,6 +28,14 @@ class Testimonial(models.Model):
     def __str__(self) -> str:
         return self.customer
 
+class Service(models.Model):
+
+    service = models.CharField(max_length=100, null=True)
+    description = models.TextField(max_length=500, null=True)
+
+    def __str__(self) -> str:
+        return self.service
+
 class Contact(models.Model):
 
     fullname = models.CharField(max_length=100, null=True)
