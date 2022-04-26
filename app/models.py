@@ -1,5 +1,3 @@
-from ast import mod
-from turtle import back
 from django.db import models
 
 # Create your models here.
