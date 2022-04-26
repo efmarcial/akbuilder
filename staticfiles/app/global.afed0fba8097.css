@@ -1,0 +1,20 @@
+.navbar-logo-centered .navbar-nav .nav-link{
+    padding: .5em 1em;
+}
+
+/* Setup logo size for desktop */
+.logo { 
+    width: 100px;
+    height: inherit;
+}
+
+main-background {
+    /* Get the image for the main page */
+    background-image: url("images/main_background.89108a75ea89.webp");
+
+    /* Set up the image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
