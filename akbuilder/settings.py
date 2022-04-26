@@ -149,4 +149,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Email back console log for debuggin
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Uncommet to send message from stmp 
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 django_on_heroku.settings(locals())

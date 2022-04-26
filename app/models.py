@@ -5,12 +5,12 @@ from django.db import models
 # Create your models here.
 class GalleryImage(models.Model):
 
-    customer = models.CharField(max_length=100, null=True, blank=True)
-    image = models.ImageField(upload_to='images/', null=True)
+    Customer_name = models.CharField(max_length=100, null=True, blank=True)
+    Image = models.ImageField(upload_to='images/', null=True)
     
 
     def __str__(self) -> str:
-        return self.customer
+        return self.Customer_name
 
 class Video(models.Model):
 
